@@ -20,7 +20,8 @@ jobs:
           script_stop: true
           script: |
             cd /var/www/Amienn-landing
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
             docker build --no-cache -t aamenn-landing:latest -f Dockerfile .
             docker stop aamenn-landing || true
             docker rm aamenn-landing || true
