@@ -1,0 +1,169 @@
+{
+  "navbar": {
+    "howItWorks": "How it works",
+    "security": "Security",
+    "pricing": "Pricing",
+    "earlyAccess": "Sign Up"
+  },
+  "hero": {
+    "badge": "Free 4GB · Encrypted from day one",
+    "title": "Your files stay yours.",
+    "titleHighlight": "Always.",
+    "subtitle": "Files are encrypted on your device before they leave it. We store them — but we can't read them. Nobody can.",
+    "priceHook": "Cheaper than Google Drive. Built for people who care about their privacy.",
+    "emailPlaceholder": "Enter your email address",
+    "cta": "Start Uploading",
+    "socialProof": "1,800+ on the waitlist",
+    "paymentMethods": "Soon: Vodafone Cash · Fawry · InstaPay",
+    "myFiles": "My Files",
+    "encrypted": "Encrypted"
+  },
+  "features": {
+    "badge": "What you get",
+    "title": "Everything you need. Nothing you don't.",
+    "subtitle": "Secure storage that doesn't make you trade privacy for convenience. Both. Together.",
+    "items": {
+      "encryption": {
+        "title": "Encrypted before upload",
+        "desc": "Your files are locked with AES-256 on your device. By the time they reach our servers, we see only encrypted data."
+      },
+      "speed": {
+        "title": "Fast — even encrypted",
+        "desc": "We optimised the encryption pipeline so uploads feel instant. Security without the slowdown."
+      },
+      "storage": {
+        "title": "4 GB free to start",
+        "desc": "New users get 4 GB at no cost. No credit card required. Upgrade only when you need more."
+      },
+      "sharing": {
+        "title": "Private sharing",
+        "desc": "Share files with a time-limited, password-protected link. Recipients get access — nobody else does."
+      },
+      "regional": {
+        "title": "Built for Egypt & the region",
+        "desc": "Local payment methods coming soon: Vodafone Cash, Fawry, and InstaPay. No foreign cards needed."
+      },
+      "crossDevice": {
+        "title": "Works everywhere",
+        "desc": "Access your files from your phone, tablet, or desktop. Everything stays in sync — always encrypted."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "How it works",
+    "title": "Simple. Secure. Yours.",
+    "subtitle": "You don't need to understand encryption to benefit from it. Here's the whole story in three steps.",
+    "steps": {
+      "encrypt": {
+        "title": "Your device encrypts it",
+        "desc": "Before anything is uploaded, your file is locked with a key that only you have. It never leaves your device unencrypted."
+      },
+      "store": {
+        "title": "We store it — but cannot see it",
+        "desc": "Your encrypted file is safely stored in our cloud. We have zero access to the content. Not us, not anyone."
+      },
+      "access": {
+        "title": "Only you can open it",
+        "desc": "When you want to view your files, your device decrypts them locally. Full access, zero compromise."
+      }
+    },
+    "trustNote": "This is called",
+    "trustNoteBold": "zero-knowledge encryption",
+    "trustNoteEnd": "— the strongest standard in privacy-first storage."
+  },
+  "trust": {
+    "badge": "Zero Access",
+    "title": "We can't read your files.",
+    "titleHighlight": "That's not a promise — it's the architecture.",
+    "subtitle": "Most services say \"we protect your privacy.\" We built a system where protecting it isn't optional — it's the only way the product works.",
+    "points": {
+      "noAccess": {
+        "title": "We genuinely cannot see your files",
+        "desc": "Not \"we promise not to look.\" We technically cannot. The decryption key lives only on your device — never on our servers."
+      },
+      "noAds": {
+        "title": "No ads. No data selling. Ever.",
+        "desc": "We make money one way: you pay for storage. That's it. No behavior tracking, no ad targeting, no hidden fees."
+      },
+      "ownership": {
+        "title": "Your data belongs to you",
+        "desc": "Export everything anytime, in standard formats. No lock-in. If you leave, your files leave with you."
+      }
+    },
+    "comparison": {
+      "others": "Others",
+      "aamenn": "AAMENN",
+      "othersDesc": "Most cloud providers",
+      "othersText": "Scans your files for ads, trains AI on your content, can hand data to third parties.",
+      "aamennDesc": "AAMENN",
+      "aamennText": "Encrypted before upload. We see only random-looking bytes. Peace of mind by design.",
+      "cta": "Secure My Spot — It's Free"
+    }
+  },
+  "comparison": {
+    "badge": "Privacy + Price",
+    "title": "Better privacy. Lower price.",
+    "subtitle": "Most storage providers make money by scanning your files. We don't — and we still charge less.",
+    "features": {
+      "encryption": {
+        "title": "End-to-end Encryption",
+        "desc": "We do not see your files. Ever.",
+        "aamenn": "Zero Access",
+        "others": "Can Access Files"
+      },
+      "price": {
+        "title": "Monthly Price",
+        "desc": "Simple, transparent pricing.",
+        "aamenn": "From EGP 7 / month",
+        "others": "$2+ (Google Drive)"
+      },
+      "payment": {
+        "title": "Payment Methods",
+        "desc": "Pay your way, locally.",
+        "aamenn": "Local Visa, InstaPay, Vodafone Cash, Fawry",
+        "others": "International Cards Only"
+      }
+    },
+    "tableHeaders": {
+      "features": "Features",
+      "comparison": "Comparison",
+      "aamenn": "AAMENN",
+      "aamennSubtitle": "Privacy-First Storage",
+      "others": "Others",
+      "othersSubtitle": "Typical Cloud Services"
+    },
+    "footnote": "* Comparison based on standard free tier offerings of major cloud providers as of Oct 2023."
+  },
+  "preFooter": {
+    "title": "Your privacy is worth protecting.",
+    "titleHighlight": "Start for free.",
+    "subtitle": "Join the waitlist. Get 4 GB free on launch. Be the first to know when we go live — and lock in early bird pricing.",
+    "emailPlaceholder": "your@email.com",
+    "cta": "Get Early Access",
+    "submitted": "You're on the list — we'll be in touch soon.",
+    "trustNote": "No spam · Free 4 GB on launch"
+  },
+  "footer": {
+    "tagline": "Your photos. Your privacy.",
+    "subtitle": "Secure cloud storage for the modern web.",
+    "product": {
+      "title": "Product",
+      "howItWorks": "How it works",
+      "security": "Security",
+      "pricing": "Pricing"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "copyright": "© 2025 AAMENN. All rights reserved."
+  }
+}
