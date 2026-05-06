@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -36,6 +37,21 @@ const InfoBox = ({ children }) => (
 );
 
 export default function TermsOfService() {
+  const { t } = useTranslation();
+  const eligibilityItems = t('landing.termsPage.eligibilityItems', { returnObjects: true });
+  const accountItems = t('landing.termsPage.accountItems', { returnObjects: true });
+  const acceptableItems = t('landing.termsPage.acceptableItems', { returnObjects: true });
+  const architectureItems = t('landing.termsPage.architectureItems', { returnObjects: true });
+  const subscriptionItems = t('landing.termsPage.subscriptionItems', { returnObjects: true });
+  const refundItems = t('landing.termsPage.refundItems', { returnObjects: true });
+  const expiryItems = t('landing.termsPage.expiryItems', { returnObjects: true });
+  const availabilityItems = t('landing.termsPage.availabilityItems', { returnObjects: true });
+  const liabilityItems = t('landing.termsPage.liabilityItems', { returnObjects: true });
+  const businessItems = t('landing.termsPage.businessItems', { returnObjects: true });
+  const terminationItems = t('landing.termsPage.terminationItems', { returnObjects: true });
+  const lawItems = t('landing.termsPage.lawItems', { returnObjects: true });
+  const changesItems = t('landing.termsPage.changesItems', { returnObjects: true });
+
   return (
     <div className="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
       <Navbar />
@@ -44,12 +60,12 @@ export default function TermsOfService() {
       <div className="bg-primary pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-label uppercase tracking-widest px-4 py-1.5 mb-6">
-            Legal
+            {t('landing.legal.badge')}
           </div>
           <h1 className="font-headline text-4xl md:text-5xl font-bold text-white mb-4">
-            Terms of Service
+            {t('landing.termsPage.title')}
           </h1>
-          <p className="text-white/70 font-body text-sm">Last updated: April 26, 2026</p>
+          <p className="text-white/70 font-body text-sm">{t('landing.legal.lastUpdated')}</p>
         </div>
       </div>
 
@@ -59,73 +75,52 @@ export default function TermsOfService() {
         {/* Introduction */}
         <div className="mb-12 text-on-surface-variant font-body text-sm leading-relaxed space-y-3">
           <p>
-            Aamenn ("we", "us", "our") is a privacy-first, zero-knowledge encrypted cloud storage platform
-            operated under Egyptian law. By creating an account or using the service, you agree to these Terms.
-            If you do not agree, do not use the service.
+            {t('landing.termsPage.intro')}
           </p>
         </div>
 
-        <Section number="1" title="Eligibility">
-          <BulletList items={[
-            'You must be 13 or older to use Aamenn.',
-            'Available to individuals and businesses across the MENA region and worldwide.',
-            'You must provide accurate registration information.',
-          ]} />
+        <Section number="1" title={t('landing.termsPage.sections.eligibility')}>
+          <BulletList items={eligibilityItems} />
         </Section>
 
-        <Section number="2" title="Account Responsibility">
-          <p>You are fully responsible for your account and everything done under it.</p>
-          <BulletList items={[
-            'Keep your password and recovery key secure — we cannot recover them for you.',
-            'If you lose your recovery key, your encrypted files are permanently inaccessible — this is by design.',
-            'Notify us immediately at info@aamenn.com if you suspect unauthorized access.',
-          ]} />
+        <Section number="2" title={t('landing.termsPage.sections.account')}>
+          <p>{t('landing.termsPage.accountIntro')}</p>
+          <BulletList items={accountItems} />
           <WarningBox>
-            <p><strong>Important:</strong> Aamenn uses zero-knowledge encryption. If you lose your password and recovery key,
-            your encrypted files cannot be recovered — by you or by Aamenn. There are no backdoors.</p>
+            <p><strong>{t('landing.termsPage.importantLabel')}</strong>{t('landing.termsPage.accountWarning')}</p>
           </WarningBox>
         </Section>
 
-        <Section number="3" title="Acceptable Use">
-          <p>You may not use Aamenn to store or share:</p>
-          <BulletList items={[
-            'Illegal content under Egyptian or international law.',
-            'Content that violates third-party intellectual property rights.',
-            'Malware, exploits, or harmful code.',
-            'Content that endangers minors.',
-          ]} />
+        <Section number="3" title={t('landing.termsPage.sections.acceptableUse')}>
+          <p>{t('landing.termsPage.acceptableIntro')}</p>
+          <BulletList items={acceptableItems} />
           <InfoBox>
-            <p><strong>How we enforce this:</strong> Because we cannot read your files, enforcement relies on metadata, user reports, and external legal requests — not content inspection.</p>
+            <p><strong>{t('landing.termsPage.enforceLabel')}</strong>{t('landing.termsPage.enforceText')}</p>
           </InfoBox>
-          <p>Violation results in immediate account termination with no refund and no grace period.</p>
+          <p>{t('landing.termsPage.acceptableFooter')}</p>
         </Section>
 
-        <Section number="4" title="Zero-Knowledge Architecture">
+        <Section number="4" title={t('landing.termsPage.sections.architecture')}>
           <InfoBox>
-            <p><strong>This is our core promise:</strong> Aamenn is technically incapable of reading your files.</p>
+            <p><strong>{t('landing.termsPage.corePromiseLabel')}</strong>{t('landing.termsPage.corePromiseText')}</p>
           </InfoBox>
-          <BulletList items={[
-            'All files are encrypted on your device before upload.',
-            'Aamenn servers cannot read, access, or view your files.',
-            'We have no ability to recover your files if you lose your encryption key.',
-            'In the event of a government or legal data request, we can only provide metadata (account email, IP logs, storage usage) — never file contents, because we technically cannot access them.',
-          ]} />
+          <BulletList items={architectureItems} />
         </Section>
 
-        <Section number="5" title="Subscription & Payment">
-          <p>Aamenn offers the following plans (prices in EGP, subject to applicable Egyptian taxes):</p>
+        <Section number="5" title={t('landing.termsPage.sections.subscription')}>
+          <p>{t('landing.termsPage.subscriptionIntro')}</p>
           <div className="bg-surface-container-low border border-outline-variant overflow-hidden my-3">
             <table className="w-full text-sm font-body">
               <thead>
                 <tr className="border-b border-outline-variant bg-surface-container">
-                  <th className="text-left px-4 py-2 text-on-surface font-headline font-bold text-xs uppercase tracking-widest">Storage</th>
-                  <th className="text-left px-4 py-2 text-on-surface font-headline font-bold text-xs uppercase tracking-widest">Monthly</th>
-                  <th className="text-left px-4 py-2 text-on-surface font-headline font-bold text-xs uppercase tracking-widest">Yearly</th>
+                  <th className="text-left px-4 py-2 text-on-surface font-headline font-bold text-xs uppercase tracking-widest">{t('landing.termsPage.table.storage')}</th>
+                  <th className="text-left px-4 py-2 text-on-surface font-headline font-bold text-xs uppercase tracking-widest">{t('landing.termsPage.table.monthly')}</th>
+                  <th className="text-left px-4 py-2 text-on-surface font-headline font-bold text-xs uppercase tracking-widest">{t('landing.termsPage.table.yearly')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ['4 GB',   'Free',       'Free'],
+                  ['4 GB',   t('landing.termsPage.table.free'),       t('landing.termsPage.table.free')],
                   ['8 GB',   'EGP 7',      'EGP 70'],
                   ['16 GB',  'EGP 13',     'EGP 130'],
                   ['32 GB',  'EGP 25',     'EGP 250'],
@@ -145,100 +140,62 @@ export default function TermsOfService() {
               </tbody>
             </table>
           </div>
-          <BulletList items={[
-            'Billing is monthly or annual, auto-renewing.',
-            'Annual plans are billed upfront for the full year.',
-            'Annual plan users retain full access until the end of their paid year upon cancellation.',
-          ]} />
+          <BulletList items={subscriptionItems} />
         </Section>
 
-        <Section number="6" title="Refund & Cancellation Policy">
-          <BulletList items={[
-            'First purchase only: 7-day refund window for new subscribers who have never held a paid plan before.',
-            'All other payments: final, no exceptions.',
-            'Annual cancellations: no pro-rata refund — access continues until end of paid year.',
-            'To cancel: account settings → subscription → cancel.',
-          ]} />
+        <Section number="6" title={t('landing.termsPage.sections.refund')}>
+          <BulletList items={refundItems} />
           <p>
-            See the full{' '}
+            {t('landing.termsPage.refundLinkBefore')}
             <a href="/refund" className="text-primary underline hover:text-secondary transition-colors">
-              Refund &amp; Cancellation Policy
+              {t('landing.termsPage.refundLinkText')}
             </a>{' '}
-            for the complete grace period timeline and deletion schedule.
+            {t('landing.termsPage.refundLinkAfter')}
           </p>
         </Section>
 
-        <Section number="7" title="Account Expiry & Data Deletion">
-          <p>When a paid subscription expires without renewal:</p>
-          <BulletList items={[
-            'Uploads are blocked immediately.',
-            '15-day grace period begins — encrypted files remain readable and downloadable.',
-            'Warning emails sent on: Day 0 / Day 5 / Day 10 / Day 13 / Day 15 morning / Day 15 night.',
-            'After Day 15: all encrypted files are permanently and irreversibly deleted.',
-          ]} />
+        <Section number="7" title={t('landing.termsPage.sections.expiry')}>
+          <p>{t('landing.termsPage.expiryIntro')}</p>
+          <BulletList items={expiryItems} />
           <WarningBox>
-            <p>We cannot recover deleted files. Zero-knowledge encryption means deletion is final — for everyone, including Aamenn.</p>
+            <p>{t('landing.termsPage.expiryWarning')}</p>
           </WarningBox>
         </Section>
 
-        <Section number="8" title="Service Availability">
-          <BulletList items={[
-            'We aim for high availability but do not guarantee uninterrupted service.',
-            'Planned maintenance will be communicated in advance.',
-            'We are not liable for data loss caused by user error, lost recovery keys, or force majeure events.',
-          ]} />
+        <Section number="8" title={t('landing.termsPage.sections.availability')}>
+          <BulletList items={availabilityItems} />
         </Section>
 
-        <Section number="9" title="Liability Limitations">
-          <BulletList items={[
-            "Aamenn's liability is limited to the amount you paid in the last 3 months.",
-            'We are not liable for indirect, incidental, or consequential damages.',
-            'We are not responsible for data you cannot access due to lost recovery keys — this is inherent to zero-knowledge design.',
-          ]} />
+        <Section number="9" title={t('landing.termsPage.sections.liability')}>
+          <BulletList items={liabilityItems} />
         </Section>
 
-        <Section number="10" title="Business Accounts">
-          <BulletList items={[
-            'Businesses using Aamenn accept these Terms on behalf of their organization.',
-            'The account owner is legally responsible for all users under that account.',
-            'We offer no SLA guarantees at this stage — enterprise SLAs are roadmap items.',
-          ]} />
+        <Section number="10" title={t('landing.termsPage.sections.business')}>
+          <BulletList items={businessItems} />
         </Section>
 
-        <Section number="11" title="Termination by Aamenn">
-          <p>We may suspend or terminate your account immediately if you:</p>
-          <BulletList items={[
-            'Violate these Terms.',
-            'Use Aamenn for illegal activity.',
-            'Attempt to reverse-engineer or attack our infrastructure.',
-          ]} />
-          <p>Terminated accounts for violations receive no refund and no grace period.</p>
+        <Section number="11" title={t('landing.termsPage.sections.termination')}>
+          <p>{t('landing.termsPage.terminationIntro')}</p>
+          <BulletList items={terminationItems} />
+          <p>{t('landing.termsPage.terminationFooter')}</p>
         </Section>
 
-        <Section number="12" title="Governing Law & Disputes">
-          <BulletList items={[
-            'These Terms are governed by Egyptian law.',
-            'Disputes will be resolved in Egyptian courts.',
-            'We will always attempt to resolve disputes informally first — contact info@aamenn.com.',
-          ]} />
+        <Section number="12" title={t('landing.termsPage.sections.law')}>
+          <BulletList items={lawItems} />
         </Section>
 
-        <Section number="13" title="Changes to Terms">
-          <BulletList items={[
-            'We may update these Terms at any time.',
-            'Users will be notified by email 30 days before major changes take effect.',
-            'Continued use after that date constitutes acceptance of the updated Terms.',
-          ]} />
+        <Section number="13" title={t('landing.termsPage.sections.changes')}>
+          <BulletList items={changesItems} />
         </Section>
 
-        <Section number="14" title="Contact">
+        <Section number="14" title={t('landing.termsPage.sections.contact')}>
           <div className="bg-surface-container-low border border-outline-variant p-5 space-y-2">
             <div className="font-body text-sm">
-              <span className="text-on-surface-variant">General: </span>
-              <a href="mailto:info@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">info@aamenn.com</a>
+              <span className="text-on-surface-variant">{t('landing.legal.generalLabel')}</span>
+              <a href="mailto:verify@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">{t('landing.footerMain.email')}</a>
             </div>
             <div className="font-body text-sm text-on-surface-variant">
-              Address: 177 Al Haram Street, Police Tower, Office No. 1, First Floor
+              {t('landing.legal.addressLabel')}{t('landing.footerMain.address')}
             </div>
           </div>
         </Section>

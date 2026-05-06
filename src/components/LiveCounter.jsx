@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function LiveCounter() {
+  const { t } = useTranslation();
   const [value, setValue] = useState(16420.45);
   const [dots, setDots] = useState('.');
 
@@ -28,9 +30,9 @@ export default function LiveCounter() {
     <section className="py-16 bg-white border-y border-outline-variant relative overflow-hidden">
       <div className="absolute inset-0 geometric-pattern"></div>
       <div className="max-w-7xl mx-auto px-8 text-center relative z-10">
-        <p className="text-on-surface-variant font-bold uppercase tracking-[0.2em] mb-4 text-sm">Real-Time Data Protection</p>
+        <p className="text-on-surface-variant font-bold uppercase tracking-[0.2em] mb-4 text-sm">{t('landing.liveCounter.label')}</p>
         <div className="text-5xl md:text-7xl font-headline font-black text-primary tabular-nums tracking-tighter">
-          {value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} GB <span className="text-secondary text-3xl md:text-5xl">and counting{dots}</span>
+          {value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {t('landing.liveCounter.unit')} <span className="text-secondary text-3xl md:text-5xl">{t('landing.liveCounter.counting')}{dots}</span>
         </div>
       </div>
       <img

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import KeffiyehPattern from './KeffiyehPattern';
 
 const PLANS = [
@@ -20,6 +21,7 @@ function formatStorage(gb) {
 }
 
 export default function Pricing() {
+  const { t } = useTranslation();
   const [billing, setBilling] = useState('monthly'); // 'monthly' | 'yearly'
 
   return (
@@ -29,10 +31,10 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="font-headline text-5xl font-black mb-4 text-primary">
-            Cloud Allocation
+            {t('landing.pricingGrid.title')}
           </h2>
           <p className="text-xl text-on-surface-variant mb-10">
-            Select your required capacity for institutional-grade storage.
+            {t('landing.pricingGrid.subtitle')}
           </p>
 
           {/* Billing toggle */}
@@ -45,7 +47,7 @@ export default function Pricing() {
                   : 'text-on-surface-variant hover:text-primary'
               }`}
             >
-              Monthly
+              {t('landing.pricingGrid.monthly')}
             </button>
             <button
               onClick={() => setBilling('yearly')}
@@ -55,11 +57,11 @@ export default function Pricing() {
                   : 'text-on-surface-variant hover:text-primary'
               }`}
             >
-              Yearly
+              {t('landing.pricingGrid.yearly')}
               <span className={`text-xs font-black px-2 py-0.5 rounded-full ${
                 billing === 'yearly' ? 'bg-white/20 text-white' : 'bg-secondary/10 text-secondary'
               }`}>
-                SAVE ~17%
+                {t('landing.pricingGrid.save')}
               </span>
             </button>
           </div>
@@ -84,7 +86,7 @@ export default function Pricing() {
                 <div className="absolute inset-0 geometric-pattern-red"></div>
                 {isFeatured && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary text-white text-xs font-black px-3 py-0.5 uppercase tracking-widest whitespace-nowrap z-20 shadow-lg rounded-b-md">
-                    Most Popular
+                    {t('landing.pricingGrid.popular')}
                   </div>
                 )}
                 <div className="p-5 flex flex-col items-center flex-1 w-full relative z-10">
@@ -97,14 +99,14 @@ export default function Pricing() {
                   {/* Price */}
                   <div className="mt-3 mb-4 min-h-[3rem] flex flex-col items-center justify-center">
                     {plan.free ? (
-                      <span className="text-secondary font-black text-lg uppercase tracking-widest">Free</span>
+                      <span className="text-secondary font-black text-lg uppercase tracking-widest">{t('landing.pricingGrid.free')}</span>
                     ) : (
                       <>
                         <span className="font-bold text-on-surface text-base">
                           EGP {price?.toLocaleString()}
                         </span>
                         <span className="text-xs text-on-surface-variant">
-                          / {billing === 'yearly' ? 'year' : 'month'}
+                          / {billing === 'yearly' ? t('landing.pricingGrid.year') : t('landing.pricingGrid.month')}
                         </span>
                         {billing === 'yearly' && (
                           <span className="text-xs text-secondary font-bold mt-0.5">
@@ -125,7 +127,7 @@ export default function Pricing() {
                         : 'border border-primary text-primary group-hover:bg-secondary group-hover:border-secondary group-hover:text-white'
                     }`}
                   >
-                    {plan.free ? 'Start Free' : 'Select Tier'}
+                    {plan.free ? t('landing.pricingGrid.startFree') : t('landing.pricingGrid.selectTier')}
                   </a>
                 </div>
               </div>
@@ -135,7 +137,7 @@ export default function Pricing() {
 
         {/* Footer note */}
         <p className="text-center text-xs text-on-surface-variant mt-8">
-          All plans include end-to-end encryption · No credit card required for free tier · Local payment methods coming soon
+          {t('landing.pricingGrid.footer')}
         </p>
       </div>
     </section>

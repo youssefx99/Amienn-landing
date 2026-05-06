@@ -7,8 +7,8 @@
   },
   "hero": {
     "badge": "Free 4GB · Encrypted from day one",
-    "title": "Your files stay yours.",
-    "titleHighlight": "Always.",
+    "title": "Your Files.",
+    "titleHighlight": "Only Yours.",
     "subtitle": "Files are encrypted on your device before they leave it. We store them — but we can't read them. Nobody can.",
     "priceHook": "Cheaper than Google Drive. Built for people who care about their privacy.",
     "emailPlaceholder": "Enter your email address",
@@ -165,5 +165,434 @@
       "cookies": "Cookie Policy"
     },
     "copyright": "© 2025 Aamenn. All rights reserved."
+  },
+  "landing": {
+    "navbar": {
+      "features": "Features",
+      "technology": "Technology",
+      "security": "Security",
+      "pricing": "Pricing",
+      "enterprise": "Enterprise",
+      "myAccount": "My Account",
+      "login": "Login",
+      "signUp": "Sign Up",
+      "language": "العربية"
+    },
+    "hero": {
+      "title": "Your files.",
+      "highlight": "Only yours.",
+      "cta": "Start & Get 4GB FREE"
+    },
+    "encryptedPhotos": {
+      "badge": "encrypted"
+    },
+    "privacy": {
+      "title": "Privacy First, Always",
+      "subtitle": "Your files are locked with your password before they leave your device. Only you can unlock them.",
+      "mainTitle": "Your Privacy, Guaranteed",
+      "mainDescription": "We can't see your photos, read your file names, or access your password. Your files belong to you - not us.",
+      "learnMore": "How privacy works",
+      "privateTitle": "Always Private",
+      "privateDescription": "We don't track what you store or when you use it.",
+      "keysTitle": "You Hold the Keys",
+      "keysDescription": "Only you can unlock your files. We don't have copies of your keys.",
+      "trustedTitle": "Trusted by Professionals",
+      "trustedDescription": "Perfect for families and teams who need their photos and documents to stay completely private."
+    },
+    "liveCounter": {
+      "label": "Real-Time Data Protection",
+      "unit": "GB",
+      "counting": "and counting"
+    },
+    "comparisonTable": {
+      "title": "How we compare",
+      "feature": "Feature",
+      "aamenn": "Aamenn",
+      "googleDrive": "Google Drive",
+      "protonDrive": "Proton Drive",
+      "rows": {
+        "encryption": "End-to-End Encryption",
+        "metadata": "Zero-Knowledge (No Metadata)",
+        "arabic": "Native Arabic UI",
+        "payments": "Local GCC Payments"
+      }
+    },
+    "pricingGrid": {
+      "title": "Cloud Allocation",
+      "subtitle": "Select your required capacity for institutional-grade storage.",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save": "SAVE ~17%",
+      "popular": "Most Popular",
+      "free": "Free",
+      "year": "year",
+      "month": "month",
+      "startFree": "Start Free",
+      "selectTier": "Select Tier",
+      "footer": "MENA and Egyptian Local payment methods Avalible"
+    },
+    "faq": {
+      "title": "Frequently Asked",
+      "items": [
+        {
+          "question": "What is zero-knowledge?",
+          "answer": "Zero-knowledge encryption means that your service provider (us) has zero knowledge of the data you store. We don't have the keys, we don't know the file names, and we can't reset your password because we don't know what it is."
+        },
+        {
+          "question": "What if I lose my key?",
+          "answer": "Because of our zero-knowledge architecture, if you lose your recovery phrase and password, we cannot recover your data. We recommend storing physical backups of your master recovery key in a secure location."
+        },
+        {
+          "question": "Where is data stored?",
+          "answer": "Your encrypted files are stored on our cloud storage. All data is encrypted on your device before it leaves — our cloud only ever receives ciphertext and has no ability to decrypt or access your files."
+        }
+      ]
+    },
+    "footerCta": {
+      "alt": "Aamenn security avatar holding encryption key",
+      "title": "Your files, locked to you.",
+      "subtitle": "No scanning. No metadata collection. No access — not even ours. Sign up and keep your files to yourself.",
+      "cta": "Get Started"
+    },
+    "footerMain": {
+      "brand": "Aamenn",
+      "tagline": "Zero-Knowledge Encryption Standard",
+      "copyright": "© 2025 Aamenn",
+      "address": "177 Al Haram Street, Police Tower, Office No. 1, First Floor",
+      "quickLinks": "Quick Links",
+      "about": "About Us",
+      "privacy": "Privacy Policy",
+      "refund": "Refund & Cancellation",
+      "terms": "Terms of Service",
+      "connect": "Connect With Us",
+      "bottom": "Secure cloud storage with end-to-end encryption",
+      "email": "verify@aamenn.com"
+    },
+    "aboutPage": {
+      "badge": "About Us",
+      "titleLine1": "Built for Privacy.",
+      "titleLine2": "Built for MENA.",
+      "subtitle": "Aamenn is a zero-knowledge encrypted cloud — where only you can access your files, always.",
+      "missionTitle": "Our Mission",
+      "missionParagraph1": "Provide cloud storage where only the user can access their files — empowering individuals with true data sovereignty and uncompromising privacy protection.",
+      "missionParagraph2": "Aamenn is built specifically for privacy-conscious users, with a strong focus on the Arab and MENA region: a native Arabic interface, local payment support, and regional customer service — features mainstream platforms have always overlooked.",
+      "storyTitle": "Our Story",
+      "storyParagraph1Prefix": "Aamenn was founded to solve a problem that mainstream cloud platforms ignore: ",
+      "storyParagraph1Strong": "your files aren't actually private.",
+      "storyParagraph2": "Google, iCloud, and OneDrive scan content, harvest metadata, train AI models on your data, and comply with government surveillance requests — all without your meaningful consent. Existing privacy-focused alternatives either fail to deliver on their promises, or fail Arab users entirely: no Arabic UI, no local payment methods, no regional relevance.",
+      "storyParagraph3": "Aamenn was built to fix that. A cloud platform engineered from the ground up around zero-knowledge encryption, designed first for the people who needed it most and were served last.",
+      "differentTitle": "What Makes Us Different",
+      "differentItems": [
+        {
+          "title": "Zero-knowledge architecture",
+          "description": "Your encryption keys never leave your device. The server literally cannot read your files — not even our engineers."
+        },
+        {
+          "title": "No backdoors",
+          "description": "Admin access exists for infrastructure monitoring and statistics only. It cannot decrypt user data under any circumstances."
+        },
+        {
+          "title": "Military-grade encryption",
+          "description": "AES-256-GCM for all file encryption, PBKDF2 for key derivation — the same standards used by governments and defense organizations."
+        },
+        {
+          "title": "True E2EE for everything",
+          "description": "Not just certain file types like competitors — every single file, photo, and document is end-to-end encrypted without exception."
+        },
+        {
+          "title": "Arab-first",
+          "description": "Native Arabic interface, MENA-compatible payment methods, and Arabic customer support. Built for the region, not bolted on."
+        }
+      ],
+      "valuesTitle": "Our Values",
+      "values": {
+        "privacy": {
+          "title": "Privacy",
+          "description": "Your data is yours, full stop. No scanning, no monetization, no exceptions — ever."
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "Zero-knowledge means no hidden access — not even by Aamenn itself. The architecture enforces what policy alone cannot."
+        },
+        "trust": {
+          "title": "Trust",
+          "description": "Enforced by cryptography, not promises. The master key never leaves your device — trust is built in, not declared."
+        }
+      },
+      "contactTitle": "Location & Contact",
+      "addressLabel": "Address",
+      "emailLabel": "Email"
+    },
+    "legal": {
+      "badge": "Legal",
+      "lastUpdated": "Last updated: April 26, 2026",
+      "emailLabel": "Email: ",
+      "generalLabel": "General: ",
+      "addressLabel": "Address: "
+    },
+    "privacyPage": {
+      "title": "Privacy Policy",
+      "sections": {
+        "overview": "Overview",
+        "collect": "Data We Collect",
+        "notCollect": "Data We Do NOT Collect",
+        "extension": "Browser Extension — Aamenn Image Saver",
+        "use": "How We Use Your Data",
+        "storage": "Data Storage & Security",
+        "rights": "Your Rights",
+        "cookies": "Cookies",
+        "changes": "Changes to This Policy",
+        "contact": "Contact"
+      },
+      "overview": {
+        "p1BeforeLink": "Aamenn (\"we\", \"our\", or \"us\") operates the Aamenn encrypted cloud platform accessible at ",
+        "p1AfterLink": " and the Aamenn Image Saver browser extension. This Privacy Policy explains what data we collect, how we use it, and the rights you have over your data.",
+        "p2BeforeStrong": "Aamenn is built on a ",
+        "p2Strong": "zero-knowledge encryption",
+        "p2AfterStrong": " architecture. Your files and master key are encrypted on your device before they ever reach our servers. We are technically incapable of reading your files, photos, or encryption keys."
+      },
+      "collectIntro": "We collect the minimum data necessary to provide the service:",
+      "collectItems": [
+        "Email address — used for account identification and security notifications.",
+        "Encrypted master key — a version of your master key that can only be decrypted with your password. We never see the plaintext key.",
+        "Encrypted files — your files are encrypted client-side before upload. We store only the ciphertext.",
+        "Encrypted file metadata — filenames and thumbnails are encrypted before storage.",
+        "Account activity metadata — timestamps of uploads, file counts, and storage usage for billing and quota purposes.",
+        "IP address — logged transiently for security and abuse prevention. Not linked to your files."
+      ],
+      "notCollectItems": [
+        "Your plaintext files, photos, or documents.",
+        "Your master encryption key in plaintext.",
+        "Your password — we use zero-knowledge key derivation (PBKDF2/Argon2).",
+        "Browsing history or activity outside the Aamenn platform.",
+        "Any data from the browser extension beyond what you explicitly save to your cloud storage."
+      ],
+      "extensionIntro": "The Aamenn Image Saver extension collects and uses the following data locally in your browser:",
+      "extensionItems": [
+        "Access token — stored in your browser's local extension storage to authenticate uploads to your own cloud. Never sent to third parties.",
+        "Master key (base64) — stored locally to encrypt images before upload. Never transmitted except as encrypted ciphertext to Aamenn servers.",
+        "Images you choose to save — fetched from the source URL you right-click on, encrypted on-device, then uploaded to your cloud."
+      ],
+      "extensionFooterBeforeStrong": "The extension does ",
+      "extensionFooterStrong": "not",
+      "extensionFooterAfterStrong": " track your browsing activity, collect analytics, or transmit any data to parties other than Aamenn servers.",
+      "useItems": [
+        "To provide the encrypted cloud storage service.",
+        "To authenticate your identity and protect your account.",
+        "To enforce storage quotas and billing.",
+        "To send security-related notifications (e.g. new device login).",
+        "To investigate abuse and enforce our Terms of Service."
+      ],
+      "useFooterBeforeStrong": "We do ",
+      "useFooterStrong": "not",
+      "useFooterAfterStrong": " sell, rent, or share your data with third parties for advertising or marketing purposes.",
+      "storageP1": "Encrypted files are stored in our cloud storage. All data in transit is protected by TLS 1.3. Your encryption keys are derived from your password using PBKDF2 and never leave your device in plaintext.",
+      "storageP2": "Even in the event of a server breach, your files remain protected by AES-256-GCM encryption that only you can decrypt.",
+      "rightsIntro": "You have the right to:",
+      "rightsItems": [
+        "Access — request a copy of the data we hold about your account.",
+        "Deletion — delete your account and all associated data at any time from your account settings.",
+        "Portability — export your encrypted files at any time.",
+        "Correction — update your account information.",
+        "Objection — object to processing of your data where applicable under GDPR."
+      ],
+      "cookiesBeforeCode": "The Aamenn web application uses a minimal session indicator cookie (",
+      "cookiesAfterCode": ") to show the correct navigation state on the landing page. This cookie contains no personal data. We do not use tracking or advertising cookies.",
+      "changesText": "We may update this Privacy Policy from time to time. If we make material changes, we will notify you by email or via a notice on the platform. Continued use of the service after changes constitutes acceptance of the updated policy.",
+      "contactIntro": "For privacy-related questions or data requests, contact us at:"
+    },
+    "refundPage": {
+      "title": "Refund & Cancellation Policy",
+      "summary": {
+        "graceValue": "15 days",
+        "graceLabel": "Grace period after expiry",
+        "coolingValue": "7-day",
+        "coolingLabel": "First-purchase cooling-off only",
+        "annualValue": "Full year",
+        "annualLabel": "Access on annual plan cancellation"
+      },
+      "sections": {
+        "refunds": "Refunds",
+        "grace": "Grace Period — What Happens When Your Subscription Expires",
+        "annual": "Annual Plan Cancellation",
+        "freeTier": "Free Tier",
+        "support": "Questions & Support"
+      },
+      "coolingTitle": "7-Day First-Purchase Cooling-Off",
+      "coolingBeforeStrong": "If you are a ",
+      "coolingStrong": "first-time paying customer",
+      "coolingAfterStrong": " and request a refund within 7 days of your very first payment, we will issue a full refund — no questions asked. This applies once, to the first payment only, and never to renewals.",
+      "noRefundsTitle": "No Refunds For",
+      "noRefunds": [
+        "Any renewal payment (monthly or annual)",
+        "Forgot to cancel before the renewal date",
+        "Did not use the storage during the billing period",
+        "Partial month unused after monthly cancellation",
+        "Technical issues — these are resolved via customer support, not refunds"
+      ],
+      "legalNoteBeforeLink": "Note: Aamenn complies with applicable Egyptian consumer protection law. If you believe you have a legal claim, contact us at ",
+      "legalNoteAfterLink": ".",
+      "graceP1BeforeStrong": "When a monthly subscription expires without renewal, your account enters a ",
+      "graceP1Strong": "15-day grace period",
+      "graceP1AfterStrong": ". During this period your encrypted files remain fully accessible — you can read and download them at any time. New uploads are blocked immediately.",
+      "graceP2BeforeStrong": "After 15 days, if the subscription has not been renewed, ",
+      "graceP2Strong": "all encrypted files are permanently and irreversibly deleted",
+      "graceP2AfterStrong": ". Because Aamenn uses zero-knowledge encryption, deleted files cannot be recovered by anyone — including Aamenn.",
+      "timelineTitle": "15-Day Grace Period Timeline",
+      "timeline": [
+        {
+          "day": "0",
+          "title": "Subscription expires — Grace Period begins",
+          "description": "New uploads are blocked. Your encrypted files remain fully readable and downloadable. Notification email sent."
+        },
+        {
+          "day": "5",
+          "title": "Reminder email",
+          "description": "10 days remaining. Renew now to keep your encrypted files."
+        },
+        {
+          "day": "10",
+          "title": "Reminder email",
+          "description": "5 days remaining — final stretch. Renew or download your encrypted files."
+        },
+        {
+          "day": "13",
+          "title": "Urgent reminder",
+          "description": "48 hours remaining. Renew immediately or download your encrypted files."
+        },
+        {
+          "day": "15",
+          "title": "Morning — Last chance",
+          "description": "Deletion scheduled in 12 hours. This is your last opportunity to renew or download."
+        },
+        {
+          "day": "15",
+          "title": "Night — Permanent deletion",
+          "description": "All encrypted files are permanently and irreversibly deleted. This action cannot be undone."
+        }
+      ],
+      "annualP1BeforeStrong": "If you cancel an annual plan, you retain ",
+      "annualP1Strong": "full access until the end of your paid year",
+      "annualP1AfterStrong": ". No pro-rata refund is issued for unused months.",
+      "annualP2": "Once the paid year ends, the standard 15-day grace period begins — following the same timeline and email sequence described above. After 15 days, all encrypted files are permanently deleted.",
+      "annualP3": "This is intentional: you paid for a year, you get the year. No credits, no complexity — just a clean and fair exit window.",
+      "freeP1BeforeStrong": "The free tier includes 4 GB of encrypted storage at no charge. If a paid subscription expires and your total storage exceeds 4 GB, your account does ",
+      "freeP1Strong": "not",
+      "freeP1AfterStrong": " downgrade to the free tier — all encrypted files are deleted after the 15-day grace period regardless of total size.",
+      "freeP2": "If your total storage is within the 4 GB free limit at the time of expiry, your account automatically reverts to the free tier with no data loss.",
+      "supportIntro": "For billing questions, cancellation requests, or dispute resolution, contact us at:"
+    },
+    "termsPage": {
+      "title": "Terms of Service",
+      "intro": "Aamenn (\"we\", \"us\", \"our\") is a privacy-first, zero-knowledge encrypted cloud storage platform operated under Egyptian law. By creating an account or using the service, you agree to these Terms. If you do not agree, do not use the service.",
+      "sections": {
+        "eligibility": "Eligibility",
+        "account": "Account Responsibility",
+        "acceptableUse": "Acceptable Use",
+        "architecture": "Zero-Knowledge Architecture",
+        "subscription": "Subscription & Payment",
+        "refund": "Refund & Cancellation Policy",
+        "expiry": "Account Expiry & Data Deletion",
+        "availability": "Service Availability",
+        "liability": "Liability Limitations",
+        "business": "Business Accounts",
+        "termination": "Termination by Aamenn",
+        "law": "Governing Law & Disputes",
+        "changes": "Changes to Terms",
+        "contact": "Contact"
+      },
+      "eligibilityItems": [
+        "You must be 13 or older to use Aamenn.",
+        "Available to individuals and businesses across the MENA region and worldwide.",
+        "You must provide accurate registration information."
+      ],
+      "accountIntro": "You are fully responsible for your account and everything done under it.",
+      "accountItems": [
+        "Keep your password and recovery key secure — we cannot recover them for you.",
+        "If you lose your recovery key, your encrypted files are permanently inaccessible — this is by design.",
+        "Notify us immediately at verify@aamenn.com if you suspect unauthorized access."
+      ],
+      "importantLabel": "Important:",
+      "accountWarning": " Aamenn uses zero-knowledge encryption. If you lose your password and recovery key, your encrypted files cannot be recovered — by you or by Aamenn. There are no backdoors.",
+      "acceptableIntro": "You may not use Aamenn to store or share:",
+      "acceptableItems": [
+        "Illegal content under Egyptian or international law.",
+        "Content that violates third-party intellectual property rights.",
+        "Malware, exploits, or harmful code.",
+        "Content that endangers minors."
+      ],
+      "enforceLabel": "How we enforce this:",
+      "enforceText": " Because we cannot read your files, enforcement relies on metadata, user reports, and external legal requests — not content inspection.",
+      "acceptableFooter": "Violation results in immediate account termination with no refund and no grace period.",
+      "corePromiseLabel": "This is our core promise:",
+      "corePromiseText": " Aamenn is technically incapable of reading your files.",
+      "architectureItems": [
+        "All files are encrypted on your device before upload.",
+        "Aamenn servers cannot read, access, or view your files.",
+        "We have no ability to recover your files if you lose your encryption key.",
+        "In the event of a government or legal data request, we can only provide metadata (account email, IP logs, storage usage) — never file contents, because we technically cannot access them."
+      ],
+      "subscriptionIntro": "Aamenn offers the following plans (prices in EGP, subject to applicable Egyptian taxes):",
+      "table": {
+        "storage": "Storage",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "free": "Free"
+      },
+      "subscriptionItems": [
+        "Billing is monthly or annual, auto-renewing.",
+        "Annual plans are billed upfront for the full year.",
+        "Annual plan users retain full access until the end of their paid year upon cancellation."
+      ],
+      "refundItems": [
+        "First purchase only: 7-day refund window for new subscribers who have never held a paid plan before.",
+        "All other payments: final, no exceptions.",
+        "Annual cancellations: no pro-rata refund — access continues until end of paid year.",
+        "To cancel: account settings → subscription → cancel."
+      ],
+      "refundLinkBefore": "See the full ",
+      "refundLinkText": "Refund & Cancellation Policy",
+      "refundLinkAfter": " for the complete grace period timeline and deletion schedule.",
+      "expiryIntro": "When a paid subscription expires without renewal:",
+      "expiryItems": [
+        "Uploads are blocked immediately.",
+        "15-day grace period begins — encrypted files remain readable and downloadable.",
+        "Warning emails sent on: Day 0 / Day 5 / Day 10 / Day 13 / Day 15 morning / Day 15 night.",
+        "After Day 15: all encrypted files are permanently and irreversibly deleted."
+      ],
+      "expiryWarning": "We cannot recover deleted files. Zero-knowledge encryption means deletion is final — for everyone, including Aamenn.",
+      "availabilityItems": [
+        "We aim for high availability but do not guarantee uninterrupted service.",
+        "Planned maintenance will be communicated in advance.",
+        "We are not liable for data loss caused by user error, lost recovery keys, or force majeure events."
+      ],
+      "liabilityItems": [
+        "Aamenn's liability is limited to the amount you paid in the last 3 months.",
+        "We are not liable for indirect, incidental, or consequential damages.",
+        "We are not responsible for data you cannot access due to lost recovery keys — this is inherent to zero-knowledge design."
+      ],
+      "businessItems": [
+        "Businesses using Aamenn accept these Terms on behalf of their organization.",
+        "The account owner is legally responsible for all users under that account.",
+        "We offer no SLA guarantees at this stage — enterprise SLAs are roadmap items."
+      ],
+      "terminationIntro": "We may suspend or terminate your account immediately if you:",
+      "terminationItems": [
+        "Violate these Terms.",
+        "Use Aamenn for illegal activity.",
+        "Attempt to reverse-engineer or attack our infrastructure."
+      ],
+      "terminationFooter": "Terminated accounts for violations receive no refund and no grace period.",
+      "lawItems": [
+        "These Terms are governed by Egyptian law.",
+        "Disputes will be resolved in Egyptian courts.",
+        "We will always attempt to resolve disputes informally first — contact verify@aamenn.com."
+      ],
+      "changesItems": [
+        "We may update these Terms at any time.",
+        "Users will be notified by email 30 days before major changes take effect.",
+        "Continued use after that date constitutes acceptance of the updated Terms."
+      ]
+    }
   }
 }

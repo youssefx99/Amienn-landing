@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const images = [
   { src: './image1.jpg', rotate: '-rotate-6 hover:-rotate-3' },
@@ -39,16 +40,19 @@ function LockIcon() {
   return (
     <svg width="14" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9 15.5C6.93281 15.05 0.5625 11.525 0.5625 5.1875C0.5625 4.20368 0.87205 3.24479 1.4473 2.44667C2.02255 1.64855 2.83434 1.05166 3.76768 0.740547C4.70102 0.429435 5.70859 0.419873 6.64766 0.713218C7.58673 1.00656 8.40971 1.58794 9 2.375C9.59029 1.58794 10.4133 1.00656 11.3523 0.713218C12.2914 0.419873 13.299 0.429435 14.2323 0.740547C15.1657 1.05166 15.9774 1.64855 16.5527 2.44667C17.128 3.24479 17.4375 4.20368 17.4375 5.1875C17.4375 11.525 11.0672 15.05 9 15.5Z"
-        fill="#DC2626"
+        d="M4.5 7V5.5C4.5 3.01472 6.51472 1 9 1C11.4853 1 13.5 3.01472 13.5 5.5V7M4.5 7H13.5M4.5 7C3.67157 7 3 7.67157 3 8.5V13.5C3 14.3284 3.67157 15 4.5 15H13.5C14.3284 15 15 14.3284 15 13.5V8.5C15 7.67157 14.3284 7 13.5 7M9 11C9.55228 11 10 10.5523 10 10C10 9.44772 9.55228 9 9 9C8.44772 9 8 9.44772 8 10C8 10.5523 8.44772 11 9 11Z"
+        stroke="#DC2626"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
 }
 
 export default function EncryptedPhotos() {
+  const { t } = useTranslation();
+
   return (
 
     <section className="py-20 bg-transparent overflow-hidden">      <div className="max-w-5xl mx-auto px-8">
@@ -62,7 +66,7 @@ export default function EncryptedPhotos() {
               <img
                 src={img.src}
                 alt=""
-                className="h-full w-full object-cover transition-all duration-500"
+                className="h-full w-full object-cover transition-all duration-500 blur-[3px] group-hover:blur-0"
               />
 
               {/* Encrypted overlay on hover */}
@@ -76,7 +80,7 @@ export default function EncryptedPhotos() {
                 {/* Encrypted badge */}
                 <div className="absolute top-1/2 left-1/2 flex w-fit -translate-x-1/2 -translate-y-1/2 flex-row items-center justify-center gap-2 rounded-2xl bg-white px-4 py-2 text-sm font-semibold text-black shadow-md">
                   <LockIcon />
-                  encrypted
+                  {t('landing.encryptedPhotos.badge')}
                 </div>
               </div>
             </div>

@@ -62,9 +62,9 @@ html {
   --color-on-error: #ffffff;
   --color-on-error-container: #93000a;
 
-  --font-family-headline: "Noto Serif", serif;
-  --font-family-body: "Manrope", sans-serif;
-  --font-family-label: "Manrope", sans-serif;
+  --font-family-headline: "Plus Jakarta Sans", sans-serif;
+  --font-family-body: "Plus Jakarta Sans", sans-serif;
+  --font-family-label: "Plus Jakarta Sans", sans-serif;
 
   --radius-DEFAULT: 0.125rem;
   --radius-lg: 0.25rem;

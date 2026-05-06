@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -36,6 +37,10 @@ const NoRefundRow = ({ reason }) => (
 );
 
 export default function RefundPolicy() {
+  const { t } = useTranslation();
+  const noRefunds = t('landing.refundPage.noRefunds', { returnObjects: true });
+  const timeline = t('landing.refundPage.timeline', { returnObjects: true });
+
   return (
     <div className="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col">
       <Navbar />
@@ -44,12 +49,12 @@ export default function RefundPolicy() {
       <div className="bg-primary pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/80 text-xs font-label uppercase tracking-widest px-4 py-1.5 mb-6">
-            Legal
+            {t('landing.legal.badge')}
           </div>
           <h1 className="font-headline text-4xl md:text-5xl font-bold text-white mb-4">
-            Refund &amp; Cancellation Policy
+            {t('landing.refundPage.title')}
           </h1>
-          <p className="text-white/70 font-body text-sm">Last updated: April 26, 2026</p>
+          <p className="text-white/70 font-body text-sm">{t('landing.legal.lastUpdated')}</p>
         </div>
       </div>
 
@@ -60,137 +65,102 @@ export default function RefundPolicy() {
         <div className="bg-primary/5 border border-primary/20 p-6 mb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <div>
-              <div className="font-headline font-bold text-primary text-lg">15 days</div>
-              <div className="font-body text-xs text-on-surface-variant mt-1">Grace period after expiry</div>
+              <div className="font-headline font-bold text-primary text-lg">{t('landing.refundPage.summary.graceValue')}</div>
+              <div className="font-body text-xs text-on-surface-variant mt-1">{t('landing.refundPage.summary.graceLabel')}</div>
             </div>
             <div>
-              <div className="font-headline font-bold text-primary text-lg">7-day</div>
-              <div className="font-body text-xs text-on-surface-variant mt-1">First-purchase cooling-off only</div>
+              <div className="font-headline font-bold text-primary text-lg">{t('landing.refundPage.summary.coolingValue')}</div>
+              <div className="font-body text-xs text-on-surface-variant mt-1">{t('landing.refundPage.summary.coolingLabel')}</div>
             </div>
             <div>
-              <div className="font-headline font-bold text-primary text-lg">Full year</div>
-              <div className="font-body text-xs text-on-surface-variant mt-1">Access on annual plan cancellation</div>
+              <div className="font-headline font-bold text-primary text-lg">{t('landing.refundPage.summary.annualValue')}</div>
+              <div className="font-body text-xs text-on-surface-variant mt-1">{t('landing.refundPage.summary.annualLabel')}</div>
             </div>
           </div>
         </div>
 
         {/* Refunds */}
-        <Section title="Refunds">
+        <Section title={t('landing.refundPage.sections.refunds')}>
           <div className="bg-surface-container-low border border-outline-variant p-5 mb-3">
-            <div className="font-headline font-bold text-on-surface text-sm mb-2">7-Day First-Purchase Cooling-Off</div>
+            <div className="font-headline font-bold text-on-surface text-sm mb-2">{t('landing.refundPage.coolingTitle')}</div>
             <p>
-              If you are a <strong className="text-on-surface font-semibold">first-time paying customer</strong> and request a refund within
-              7 days of your very first payment, we will issue a full refund — no questions asked.
-              This applies once, to the first payment only, and never to renewals.
+              {t('landing.refundPage.coolingBeforeStrong')}<strong className="text-on-surface font-semibold">{t('landing.refundPage.coolingStrong')}</strong>{t('landing.refundPage.coolingAfterStrong')}
             </p>
           </div>
-          <div className="font-headline font-bold text-on-surface text-sm mb-2 mt-4">No Refunds For</div>
+          <div className="font-headline font-bold text-on-surface text-sm mb-2 mt-4">{t('landing.refundPage.noRefundsTitle')}</div>
           <div className="bg-surface-container-low border border-outline-variant p-4">
-            <NoRefundRow reason="Any renewal payment (monthly or annual)" />
-            <NoRefundRow reason="Forgot to cancel before the renewal date" />
-            <NoRefundRow reason="Did not use the storage during the billing period" />
-            <NoRefundRow reason="Partial month unused after monthly cancellation" />
-            <NoRefundRow reason="Technical issues — these are resolved via customer support, not refunds" />
+            {noRefunds.map((reason) => (
+              <NoRefundRow key={reason} reason={reason} />
+            ))}
           </div>
           <p className="text-xs text-on-surface-variant italic">
-            Note: Aamenn complies with applicable Egyptian consumer protection law. If you believe you have a legal claim, contact us at{' '}
-            <a href="mailto:info@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">info@aamenn.com</a>.
+            {t('landing.refundPage.legalNoteBeforeLink')}
+            <a href="mailto:verify@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">{t('landing.footerMain.email')}</a>{t('landing.refundPage.legalNoteAfterLink')}
           </p>
         </Section>
 
         {/* Grace Period */}
-        <Section title="Grace Period — What Happens When Your Subscription Expires">
+        <Section title={t('landing.refundPage.sections.grace')}>
           <p>
-            When a monthly subscription expires without renewal, your account enters a{' '}
-            <strong className="text-on-surface font-semibold">15-day grace period</strong>.
-            During this period your encrypted files remain fully accessible — you can read and download them at any time.
-            New uploads are blocked immediately.
+            {t('landing.refundPage.graceP1BeforeStrong')}
+            <strong className="text-on-surface font-semibold">{t('landing.refundPage.graceP1Strong')}</strong>{t('landing.refundPage.graceP1AfterStrong')}
           </p>
           <p>
-            After 15 days, if the subscription has not been renewed,{' '}
-            <strong className="text-on-surface font-semibold">all encrypted files are permanently and irreversibly deleted</strong>.
-            Because Aamenn uses zero-knowledge encryption, deleted files cannot be recovered by anyone — including Aamenn.
+            {t('landing.refundPage.graceP2BeforeStrong')}
+            <strong className="text-on-surface font-semibold">{t('landing.refundPage.graceP2Strong')}</strong>{t('landing.refundPage.graceP2AfterStrong')}
           </p>
 
           <div className="mt-6">
-            <div className="text-xs font-label uppercase tracking-widest text-on-surface-variant mb-4">15-Day Grace Period Timeline</div>
+            <div className="text-xs font-label uppercase tracking-widest text-on-surface-variant mb-4">{t('landing.refundPage.timelineTitle')}</div>
             <div>
-              <TimelineStep
-                day="0"
-                title="Subscription expires — Grace Period begins"
-                description="New uploads are blocked. Your encrypted files remain fully readable and downloadable. Notification email sent."
-              />
-              <TimelineStep
-                day="5"
-                title="Reminder email"
-                description="10 days remaining. Renew now to keep your encrypted files."
-              />
-              <TimelineStep
-                day="10"
-                title="Reminder email"
-                description="5 days remaining — final stretch. Renew or download your encrypted files."
-              />
-              <TimelineStep
-                day="13"
-                title="Urgent reminder"
-                description="48 hours remaining. Renew immediately or download your encrypted files."
-              />
-              <TimelineStep
-                day="15"
-                title="Morning — Last chance"
-                description="Deletion scheduled in 12 hours. This is your last opportunity to renew or download."
-                isWarning
-              />
-              <TimelineStep
-                day="15"
-                title="Night — Permanent deletion"
-                description="All encrypted files are permanently and irreversibly deleted. This action cannot be undone."
-                isWarning
-              />
+              {timeline.map((step, index) => (
+                <TimelineStep
+                  key={`${step.day}-${step.title}`}
+                  day={step.day}
+                  title={step.title}
+                  description={step.description}
+                  isWarning={index >= 4}
+                />
+              ))}
             </div>
           </div>
         </Section>
 
         {/* Annual Plan Cancellation */}
-        <Section title="Annual Plan Cancellation">
+        <Section title={t('landing.refundPage.sections.annual')}>
           <p>
-            If you cancel an annual plan, you retain <strong className="text-on-surface font-semibold">full access until the end of your paid year</strong>.
-            No pro-rata refund is issued for unused months.
+            {t('landing.refundPage.annualP1BeforeStrong')}<strong className="text-on-surface font-semibold">{t('landing.refundPage.annualP1Strong')}</strong>{t('landing.refundPage.annualP1AfterStrong')}
           </p>
           <p>
-            Once the paid year ends, the standard 15-day grace period begins — following the same timeline and email sequence described above.
-            After 15 days, all encrypted files are permanently deleted.
+            {t('landing.refundPage.annualP2')}
           </p>
           <p>
-            This is intentional: you paid for a year, you get the year. No credits, no complexity — just a clean and fair exit window.
+            {t('landing.refundPage.annualP3')}
           </p>
         </Section>
 
         {/* Free Tier */}
-        <Section title="Free Tier">
+        <Section title={t('landing.refundPage.sections.freeTier')}>
           <p>
-            The free tier includes 4 GB of encrypted storage at no charge. If a paid subscription expires and
-            your total storage exceeds 4 GB, your account does <strong className="text-on-surface font-semibold">not</strong> downgrade to the free tier —
-            all encrypted files are deleted after the 15-day grace period regardless of total size.
+            {t('landing.refundPage.freeP1BeforeStrong')}<strong className="text-on-surface font-semibold">{t('landing.refundPage.freeP1Strong')}</strong>{t('landing.refundPage.freeP1AfterStrong')}
           </p>
           <p>
-            If your total storage is within the 4 GB free limit at the time of expiry, your account automatically reverts to
-            the free tier with no data loss.
+            {t('landing.refundPage.freeP2')}
           </p>
         </Section>
 
         {/* Contact */}
-        <Section title="Questions & Support">
+        <Section title={t('landing.refundPage.sections.support')}>
           <p>
-            For billing questions, cancellation requests, or dispute resolution, contact us at:
+            {t('landing.refundPage.supportIntro')}
           </p>
           <div className="bg-surface-container-low border border-outline-variant p-5 space-y-2 mt-2">
             <div className="font-body text-sm">
-              <span className="text-on-surface-variant">Email: </span>
-              <a href="mailto:info@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">info@aamenn.com</a>
+              <span className="text-on-surface-variant">{t('landing.legal.emailLabel')}</span>
+              <a href="mailto:verify@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">{t('landing.footerMain.email')}</a>
             </div>
             <div className="font-body text-sm text-on-surface-variant">
-              Address: 177 Al Haram Street, Police Tower, Office No. 1, First Floor
+              {t('landing.legal.addressLabel')}{t('landing.footerMain.address')}
             </div>
 
           </div>

@@ -40,11 +40,11 @@ function App() {
       <main>
         <Hero />
         <div className="bg-gradient-to-b from-primary via-primary-container to-surface">
-          <Stats />
           <EncryptedPhotos />
+          {/* <Stats /> */}
         </div>
         <BentoVariant />
-        <LiveCounter />
+        {/* <LiveCounter /> */}
         <Comparison />
         <Pricing />
         <FAQ />
