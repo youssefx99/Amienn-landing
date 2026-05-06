@@ -13,7 +13,7 @@ export default function BentoFeatures() {
             <div>
               <span className="material-symbols-outlined text-secondary text-5xl mb-6">no_accounts</span>
               <h3 className="font-headline text-3xl font-bold mb-4">No Harvesting</h3>
-              <p className="text-on-surface-variant text-lg leading-relaxed max-w-xl">AAMENN is blind by design. We cannot see your files, read your metadata, or profile your identity. Your data is your property, not our product.</p>
+              <p className="text-on-surface-variant text-lg leading-relaxed max-w-xl">Aamenn is blind by design. We cannot see your files, read your metadata, or profile your identity. Your data is your property, not our product.</p>
             </div>
             <div className="flex items-center gap-4 text-secondary font-bold group-hover:gap-6 transition-all cursor-pointer">
               Learn about Zero-Knowledge <span className="material-symbols-outlined">arrow_forward</span>

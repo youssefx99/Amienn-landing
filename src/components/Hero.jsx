@@ -12,7 +12,7 @@ export default function Hero() {
 
         <div className="flex justify-center">
           <a href="https://web.aamenn.com/signup" className="bg-primary text-white px-16 py-8 font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors shadow-2xl text-lg md:text-xl transform hover:scale-105 transition-transform">
-            Start & Get 5GB FREE
+            Start & Get 4GB FREE
           </a>
         </div>
       </div>

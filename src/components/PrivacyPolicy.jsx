@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
 
         <Section title="Overview">
           <p>
-            AAMENN ("we", "our", or "us") operates the Aamenn encrypted cloud platform accessible at{' '}
+            Aamenn ("we", "our", or "us") operates the Aamenn encrypted cloud platform accessible at{' '}
             <a href="https://web.aamenn.com" className="text-primary underline hover:text-secondary transition-colors">web.aamenn.com</a>{' '}
             and the Aamenn Image Saver browser extension. This Privacy Policy explains what data we collect, how we use it, and the rights you have over your data.
           </p>

@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="bg-slate-50 border-t border-slate-200">
       <div className="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto gap-6">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <div className="text-xl font-headline font-bold text-primary">AAMENN</div>
-          <div className="font-['Manrope'] text-sm text-slate-500">&copy; 2026 AAMENN Institutional Cloud. Zero-Knowledge Encryption Standard.</div>
+          <div className="text-xl font-headline font-bold text-primary">Aamenn</div>
+          <div className="font-['Manrope'] text-sm text-slate-500">&copy; 2026 Aamenn Institutional Cloud. Zero-Knowledge Encryption Standard.</div>
           <div className="font-['Manrope'] text-xs text-slate-400 mt-1">177 Al Haram Street, Police Tower, Office No. 1, First Floor</div>
           <div className="font-['Manrope'] text-xs text-slate-400">
             <a href="tel:+201094263212" className="hover:text-red-800 transition-colors">+20 1094263212</a>

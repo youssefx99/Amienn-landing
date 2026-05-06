@@ -92,10 +92,10 @@
     },
     "comparison": {
       "others": "Others",
-      "aamenn": "AAMENN",
+      "aamenn": "Aamenn",
       "othersDesc": "Most cloud providers",
       "othersText": "Scans your files for ads, trains AI on your content, can hand data to third parties.",
-      "aamennDesc": "AAMENN",
+      "aamennDesc": "Aamenn",
       "aamennText": "Encrypted before upload. We see only random-looking bytes. Peace of mind by design.",
       "cta": "Secure My Spot — It's Free"
     }
@@ -127,7 +127,7 @@
     "tableHeaders": {
       "features": "Features",
       "comparison": "Comparison",
-      "aamenn": "AAMENN",
+      "aamenn": "Aamenn",
       "aamennSubtitle": "Privacy-First Storage",
       "others": "Others",
       "othersSubtitle": "Typical Cloud Services"
@@ -164,6 +164,6 @@
       "terms": "Terms of Service",
       "cookies": "Cookie Policy"
     },
-    "copyright": "© 2025 AAMENN. All rights reserved."
+    "copyright": "© 2025 Aamenn. All rights reserved."
   }
 }

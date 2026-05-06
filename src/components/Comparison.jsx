@@ -18,7 +18,7 @@ export default function Comparison() {
             <thead>
               <tr className="border-b-2 border-primary">
                 <th className="py-6 px-4 font-headline text-xl">Feature</th>
-                <th className="py-6 px-4 font-headline text-xl text-primary font-black">AAMENN</th>
+                <th className="py-6 px-4 font-headline text-xl text-primary font-black">Aamenn</th>
                 <th className="py-6 px-4 font-headline text-xl text-on-surface-variant opacity-60">Google Drive</th>
                 <th className="py-6 px-4 font-headline text-xl text-on-surface-variant opacity-60">Proton Drive</th>
               </tr>

@@ -11,7 +11,7 @@ export default function FooterCTA() {
         <div className="shrink-0">
           <img
             src="/image avatar1.png"
-            alt="AAMENN security avatar holding encryption key"
+            alt="Aamenn security avatar holding encryption key"
             className="w-52 md:w-72"
           />
         </div>
