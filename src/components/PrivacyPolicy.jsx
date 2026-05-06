@@ -139,7 +139,6 @@ export default function PrivacyPolicy() {
           <BulletList items={[
             <>Email: <a href="mailto:info@aamenn.com" className="text-primary underline hover:text-secondary transition-colors">info@aamenn.com</a></>,
             'Address: 177 Al Haram Street, Police Tower, Office No. 1, First Floor',
-            <>Phone: <a href="tel:+201094263212" className="text-primary underline hover:text-secondary transition-colors">+20 1094263212</a></>,
           ]} />
         </Section>
 
