@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="absolute inset-x-0 top-0 z-50 bg-transparent">
       <nav className="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
         <a href="/" className="flex items-center">
-          <img src="/logo.png" alt="Aamenn" className="h-12" />
+          <img src="/newlogo.png" alt="Aamenn" className="h-12" />
         </a>
         <div className="hidden md:flex items-center gap-8">
           <a className="text-primary border-b-2 border-primary pb-1 font-label text-sm font-bold" href="/#features">Features</a>
